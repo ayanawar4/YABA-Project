@@ -3,7 +3,6 @@ import Header from './navbar';
 
 type LayoutProps = {
   children: React.ReactNode;
-  custom?: React.FC;
 };
 
 
