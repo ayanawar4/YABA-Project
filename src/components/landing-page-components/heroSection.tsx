@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroImage from '../assets/hero-image.png'
+import HeroImage from '../../assets/hero-image.png'
 
 
 export default function HeroSection() {
@@ -9,7 +9,7 @@ export default function HeroSection() {
 
     return (
         <>
-            <div className="relative hidden lg:flex">
+            <div className="relative hidden lg:flex container mx-auto">
                     <div className="z-10 pt-14 xl:pt-0 w-1/2">
                         <div className="py-16 xl:py-40 px-8 ">
 
@@ -22,28 +22,28 @@ export default function HeroSection() {
                                 <div className="mt-10 flex items-center gap-x-6">
                                     <a
                                         href="#"
-                                        className="bg-primary px-6 py-2 text-sm font-semibold text-black"
+                                        className="bg-primary px-6 py-2 text-sm font-semibold text-black hover:text-primary hover:bg-black"
                                     >
                                         View menu
                                     </a>
-                                    <a href="#" className="text-sm font-semibold px-6 py-2 outline outline-primary text-white">
+                                    <a href="#" className="text-sm font-semibold px-6 py-2 outline outline-primary text-white hover:text-primary hover:bg-black hover:outline-white">
                                         Contact us
                                     </a>
                                 </div>
                         </div>
                     </div>
-                <div className="absolute inset-y-0 right-0 w-1/2">
+                <div className="absolute inset-y-0 right-0 w-1/2 h-5/6">
                     <Image
-                        className="w-full"
+                        className="w-full h-full absolute object-cover inset-y-0 right-0"
                         src={HeroImage}
                         alt=""
                     />
                 </div>
             </div>
 
-            <div className="relative isolate overflow-hidden block lg:hidden">
+            <div className="relative isolate overflow-hidden block lg:hidden h-5/6">
                 <Image
-                    className="absolute inset-0 brightness-50 h-full w-full"
+                    className="absolute inset-0 object-cover brightness-50 h-full w-full"
                     src={HeroImage}
                     alt=""
                 />
@@ -64,7 +64,7 @@ export default function HeroSection() {
                                     >
                                         View menu
                                     </a>
-                                    <a href="#" className="text-sm font-semibold px-6 py-2 outline outline-primary text-white">
+                                    <a href="#" className="text-sm font-semibold px-6 py-2 outline outline-primary text-white hover:text-primary hover:bg-black">
                                         Contact us
                                     </a>
                                 </div>

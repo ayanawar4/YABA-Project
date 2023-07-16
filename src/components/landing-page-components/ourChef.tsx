@@ -1,10 +1,10 @@
 import Image from "next/image";
-import ChefImage from '../assets/frame-5.png'
+import ChefImage from '../../assets/frame-5.png'
 
 
 export default function Ourchef() {
     return (
-        <div className="py-10 lg:py-4 ">
+        <div className="py-10 lg:py-4 container mx-auto ">
             <div className="flex flex-col items-center lg:flex-row gap-y-16 lg:gap-y-8 lg:gap-x-6">
                 <div className="flex flex-col w-full lg:w-1/2 justify-center">
                     <h2 className="text-2xl font-bold tracking-tight text-primary md:text-3xl lg:text-4xl">Our Chef</h2>

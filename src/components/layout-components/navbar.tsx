@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import { useState } from 'react'
-import Logo from '../assets/Logo.png'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -21,23 +19,23 @@ export default function Navbar() {
                 <div className="flex lg:flex-1">
                     <a href="#" className="lg:-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <Image className="h-12 w-auto" src={Logo} alt="Yaba-Logo" />
+                        <img src="./logo.png" alt="Yaba-Logo"  />
                     </a>
                 </div>
                 <div className="hidden md:flex gap-x-8 lg:gap-x-12">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm leading-6 text-white">
+                        <a key={item.name} href={item.href} className="text-sm leading-6 text-white  hover:text-primary">
                             {item.name}
                         </a>
                     ))}
                 </div>
                 <div className="flex lg:flex-1 items-center justify-end gap-x-6 lg:gap-x-2">
                     <div className="hidden md:block lg:hidden h-[20px] w-px bg-white"></div>
-                    <a href="#" className="hidden md:block text-sm font-semibold leading-6 text-white">En</a>
+                    <a href="#" className="hidden md:block text-sm font-semibold leading-6 text-white hover:text-primary">En</a>
                     <div className="hidden lg:block h-[20px] w-px bg-white"></div>
                     <a
                         href="#"
-                        className="hidden lg:block bg-primary px-6 py-2 ml-4 text-sm font-semibold text-black">Contact us</a>
+                        className="hidden lg:block bg-primary px-6 py-2 ml-4 text-sm font-semibold text-black hover:text-primary hover:bg-black">Contact us</a>
                 </div>
                 <div className="flex md:hidden items-center gap-x-3">
                     <button
@@ -58,15 +56,11 @@ export default function Navbar() {
                     <div className="flex items-center gap-x-6">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">YABA Company</span>
-                            <Image
-                                className="h-8 w-auto"
-                                src={Logo}
-                                alt="Yaba-Logo"
-                            />
+                            <img src="./logo.png" alt="Yaba-Logo" className='h-8 w-auto' />
                         </a>
                         <a
                             href="#"
-                            className="ml-auto bg-primary px-3 py-2 text-sm font-semibold text-black "
+                            className="ml-auto bg-primary px-3 py-2 text-sm font-semibold text-black"
                         >
                             Contact us
                         </a>

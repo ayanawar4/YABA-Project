@@ -1,11 +1,9 @@
-import Aboutus from './aboutUs'
-import HeroSection from './heroSection'
-import { Inter } from 'next/font/google'
-import Ourchef from './ourChef'
-import Ourmenu from './ourMenu'
 import Layout from './layout'
+import Aboutus from '@/components/landing-page-components/aboutUs'
+import Ourchef from '@/components/landing-page-components/ourChef'
+import Ourmenu from '@/components/landing-page-components/ourMenu'
+import HeroSection from '@/components/landing-page-components/heroSection'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (

@@ -1,6 +1,5 @@
 import Image from "next/image"
-import YABAlogo from "../assets/logo.png"
-import Map from '../assets/map.png';
+import Map from '../../assets/map.png';
 
 const navigation = {
     solutions: [
@@ -38,17 +37,17 @@ export default function Footer() {
             <div className="flex sm:hidden pt-7">
                 <a href="#" className="p-1.5">
                     <span className="sr-only">Your Company</span>
-                    <Image className="h-20 w-auto" src={YABAlogo} alt="Yaba-Logo" />
+                    <img src="./logo.png" alt="Yaba-Logo"  />
                 </a>
             </div>
             <div className="mx-auto flex max-w-7xl items-center justify-between gap-x-3 xl:gap-x-8 sm:p-6 xl:px-8 ">
                 <div className="hidden sm:flex xl:flex-1">
                     <a href="#" className="lg:-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <Image className="h-18 w-auto" src={YABAlogo} alt="Yaba-Logo" />
+                        <img src="./logo.png" alt="Yaba-Logo"  />
                     </a>
                 </div>
-                <ul role="list" className="-mt-6 space-y-6">
+                <ul role="list" className="-mt-2 sm:-mt-6 space-y-2 sm:space-y-6">
                     {navigation.solutions.map((item) => (
                         <li key={item.name}>
                             <a href={item.href} className="text-xs xl:text-sm xl:leading-6 text-white">
@@ -57,7 +56,7 @@ export default function Footer() {
                         </li>
                     ))}
                 </ul>
-                <ul role="list" className="mt-6 space-y-6">
+                <ul role="list" className="mt-6 space-y-2 sm:space-y-6">
                     {navigation.support.map((item) => (
                         <li key={item.name}>
                             <a href={item.href} className="text-xs xl:text-sm xl:leading-6 text-white">
@@ -67,7 +66,7 @@ export default function Footer() {
                     ))}
                 </ul>
 
-                <ul role="list" className="mt-6 space-y-6">
+                <ul role="list" className="mt-6 space-y-2 sm:space-y-6">
                     {navigation.company.map((item) => (
                         <li key={item.name}>
                             <a href={item.href} className=" text-xs xl:text-sm xl:leading-6 text-white">

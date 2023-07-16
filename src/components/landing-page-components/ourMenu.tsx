@@ -1,12 +1,12 @@
 import Image from "next/image"
-import firstMenuItem from '../assets/menu-item-1.png'
-import secondMenuItem from '../assets/menu-item-2.png'
-import thirdMenuItem from '../assets/menu-item-3.png'
-import fourthMenuItem from '../assets/menu-item-4.png'
-import fifthMenuItem from '../assets/menu-item-5.png'
-import sixthMenuItem from '../assets/menu-item-6.png'
-import seventhMenuItem from '../assets/menu-item-7.png'
-import eighthMenuItem from '../assets/menu-item-8.png'
+import firstMenuItem from '../../assets/menu-item-1.png'
+import secondMenuItem from '../../assets/menu-item-2.png'
+import thirdMenuItem from '../../assets/menu-item-3.png'
+import fourthMenuItem from '../../assets/menu-item-4.png'
+import fifthMenuItem from '../../assets/menu-item-5.png'
+import sixthMenuItem from '../../assets/menu-item-6.png'
+import seventhMenuItem from '../../assets/menu-item-7.png'
+import eighthMenuItem from '../../assets/menu-item-8.png'
 
 const products = [
     {
@@ -61,36 +61,32 @@ const products = [
 ]
 
 const navigation = [
-    { name: 'Soups', href: '#' },
-    { name: 'Salads', href: '#' },
-    { name: 'Main Courses', href: '#' },
-    { name: 'Desserts', href: '#' },
-    { name: 'Drinks', href: '#' },
+    { name: 'Hot Starters', href: '#' , active:true},
+    { name: 'Soups', href: '#', active:false },
+    { name: 'Salads', href: '#', active:false  },
+    { name: 'Main Courses', href: '#', active:false  },
+    { name: 'Desserts', href: '#', active:false  },
+    { name: 'Drinks', href: '#', active:false  },
 ]
 
 export default function Ourmenu() {
     return (
-        <div className="py-16 sm:py-20 ">
+        <div className="py-16 sm:py-20 container mx-auto">
              <h2 className="text-2xl text-center font-bold tracking-tight text-primary md:text-3xl lg:text-4xl">Our Menu</h2>
             <div className="hidden md:flex justify-center  gap-x-8 lg:gap-x-12 py-9">
                 <>
-                    <a href='#' className="text-sm leading-6 text-primary underline underline-offset-1">
-                        Hot Starters
-                    </a>
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm leading-6 text-white">
+                        <a key={item.name} href={item.href} className="text-sm leading-6 text-white active:text-primary  active:underline  active:underline-offset-1 hover:text-primary">
                             {item.name}
                         </a>
 
                     ))}
                 </>
             </div>
-            <div className="flex justify-center py-4 md:hidden relative w-full lg:max-w-sm">
-                <select className="w-1/2  p-2.5 text-white bg-black no-border rounded-md shadow-sm outline-none focus:border-primary">
+            <div className="flex justify-center py-4 md:hidden relative w-full lg:max-w-sm  ">
+                <div className=" bg-black w-1/2  p-2.5 no-border rounded-md shadow-sm outline-none">
+                <select className=" bg-black text-white ">
                     <>
-                        <option className="text-sm leading-6 text-white">
-                            Hot Starters
-                        </option>
                         {navigation.map((item) => (
                             <option key={item.name} className="text-sm leading-6 text-white">
                                 {item.name}
@@ -98,7 +94,7 @@ export default function Ourmenu() {
                         ))}
                     </>
                 </select>
-
+                </div>
             </div>
             <div className=" hidden md:grid  gap-x-4 gap-y-10 grid-cols-2 lg:grid-cols-3 xl:gap-x-8 mt-6">
                 {products.map((product) => (
@@ -114,7 +110,7 @@ export default function Ourmenu() {
                             <h3 className="text-base text-white">
                                 {product.name}
                             </h3>
-                            <p className="text-sm text-primary underline underline-offset-1">How is it made?</p>
+                            <p className="text-sm text-primary underline underline-offset-1 hover:text-white hover:cursor-pointer">How is it made?</p>
                         </div>
                     </div>
                 ))}
@@ -133,7 +129,7 @@ export default function Ourmenu() {
                             <h3 className="text-base text-white">
                                 {product.name}
                             </h3>
-                            <p className="text-sm text-primary underline underline-offset-1">How is it made?</p>
+                            <p className="text-sm text-primary underline underline-offset-1 hover:text-white hover:cursor-pointer">How is it made?</p>
                         </div>
                     </div>
                 ))}
