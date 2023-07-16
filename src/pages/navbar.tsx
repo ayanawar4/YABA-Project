@@ -16,7 +16,7 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="absolute inset-x-0 top-0 z-50 " >
+        <header className="absolute container mx-auto inset-x-0 top-0 z-50 " >
             <nav className="flex items-center gap-x-6 p-6 px-5 md:px-10 lg:px-8 justify-between">
                 <div className="flex lg:flex-1">
                     <a href="#" className="lg:-m-1.5 p-1.5">

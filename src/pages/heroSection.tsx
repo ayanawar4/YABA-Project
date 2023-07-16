@@ -32,7 +32,7 @@ export default function HeroSection() {
                                 </div>
                         </div>
                     </div>
-                <div className="static inset-y-0 right-0 w-1/2">
+                <div className="absolute inset-y-0 right-0 w-1/2">
                     <Image
                         className="w-full"
                         src={HeroImage}
