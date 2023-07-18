@@ -11,14 +11,15 @@ type Props = {
 
 export default function Home(props: Props) {
   return (
-    <Layout>
-      <HeroSection />
-      <div className='px-6'>
-        <Aboutus />
-        <Ourchef />
-        <Ourmenu products={props.menuProducts} />
-      </div>
-    </Layout>
+
+      <Layout>
+        <HeroSection />
+        <div className='px-6'>
+          <Aboutus />
+          <Ourchef />
+          <Ourmenu products={props.menuProducts} />
+        </div>
+      </Layout>
   );
 }
 
