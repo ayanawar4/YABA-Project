@@ -3,8 +3,8 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'Menu', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Menu', href: '/menu' },
     { name: 'Our Story', href: '#' },
     { name: 'Know the Chef', href: '#' },
     { name: 'Awards', href: '#' },
@@ -17,7 +17,7 @@ export default function Navbar() {
         <header className="absolute container mx-auto inset-x-0 top-0 z-50 " >
             <nav className="flex items-center gap-x-6 p-6 px-5 md:px-10 lg:px-8 justify-between">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="lg:-m-1.5 p-1.5">
+                    <a href="/" className="lg:-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <img src="./logo.png" alt="Yaba-Logo"  />
                     </a>
@@ -54,7 +54,7 @@ export default function Navbar() {
                 <div className="fixed inset-0 z-50" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center gap-x-6">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">YABA Company</span>
                             <img src="./logo.png" alt="Yaba-Logo" className='h-8 w-auto' />
                         </a>

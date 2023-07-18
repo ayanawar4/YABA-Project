@@ -35,14 +35,14 @@ export default function Footer() {
                 Footer
             </h2>
             <div className="flex sm:hidden pt-7">
-                <a href="#" className="p-1.5">
+                <a href="/" className="p-1.5">
                     <span className="sr-only">Your Company</span>
                     <img src="./logo.png" alt="Yaba-Logo"  />
                 </a>
             </div>
             <div className="mx-auto flex max-w-7xl items-center justify-between gap-x-3 xl:gap-x-8 sm:p-6 xl:px-8 ">
                 <div className="hidden sm:flex xl:flex-1">
-                    <a href="#" className="lg:-m-1.5 p-1.5">
+                    <a href="/" className="lg:-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <img src="./logo.png" alt="Yaba-Logo"  />
                     </a>
